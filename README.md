@@ -47,6 +47,13 @@ Run and follow the instructions:
 wbso.sh
 ```
 
+## Uninstall
+
+Open a terminal, copy & paste, and run:
+
+```sh
+bash <(curl -s https://raw.githubusercontent.com/fredfigueiredo/wbso/master/uninstall.sh)
+```
 
 ## To Be Done
 
