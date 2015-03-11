@@ -2,8 +2,8 @@
 
 # Required vars
 reports_folder='reports'
-today=$(date +%Y-%m-%d)
-current_year_week=$(date +%Y-%V)
+today=$(gdate +%Y-%m-%d)
+current_year_week=$(gdate +%Y-%V)
 
 # This week file
 wbso_week_file="$current_year_week.txt"
@@ -18,44 +18,44 @@ result_week_file_path="$wbso_week_folder/$result_week_file"
 function create_report() {
 
     # Get day of the week (Mon, Tue, ...)
-    day_week=$(date +%a)
+    day_week=$(gdate +%a)
 
-    # Get date for this week Mon, Tue, ...
+    # Get gdate for this week Mon, Tue, ...
     case $day_week in
       Mon)
-        mon=$(date +%F)
-        tue=$(date -v+1d +%F)
-        wed=$(date -v+2d +%F)
-        thu=$(date -v+3d +%F)
-        fri=$(date -v+4d +%F)
+        mon=$(gdate +%F)
+        tue=$(gdate -d '+1 day' +%F)
+        wed=$(gdate -d '+2 day' +%F)
+        thu=$(gdate -d '+3 day' +%F)
+        fri=$(gdate -d '+4 day' +%F)
         ;;
       Tue)
-        mon=$(date -v-1d +%F)
-        tue=$(date +%F)
-        wed=$(date -v+1d +%F)
-        thu=$(date -v+2d +%F)
-        fri=$(date -v+3d +%F)
+        mon=$(gdate -d '-1 day' +%F)
+        tue=$(gdate +%F)
+        wed=$(gdate -d '+1 day' +%F)
+        thu=$(gdate -d '+2 day' +%F)
+        fri=$(gdate -d '+3 day' +%F)
         ;;
       Wed)
-        mon=$(date -v-2d +%F)
-        tue=$(date -v-1d +%F)
-        wed=$(date +%F)
-        thu=$(date -v+1d +%F)
-        fri=$(date -v+2d +%F)
+        mon=$(gdate -d '-2 day' +%F)
+        tue=$(gdate -d '-1 day' +%F)
+        wed=$(gdate +%F)
+        thu=$(gdate -d '+1 day' +%F)
+        fri=$(gdate -d '+2 day' +%F)
         ;;
       Thu)
-        mon=$(date -v-3d +%F)
-        tue=$(date -v-2d +%F)
-        wed=$(date -v-1d +%F)
-        thu=$(date +%F)
-        fri=$(date -v+2d +%F)
+        mon=$(gdate -d '-3 day' +%F)
+        tue=$(gdate -d '-2 day' +%F)
+        wed=$(gdate -d '-1 day' +%F)
+        thu=$(gdate +%F)
+        fri=$(gdate -d '+1 day' +%F)
       ;;
       Fri)
-        mon=$(date -v-4d +%F)
-        tue=$(date -v-3d +%F)
-        wed=$(date -v-2d +%F)
-        thu=$(date -v-1d +%F)
-        fri=$(date +%F)
+        mon=$(gdate -d '-4 day' +%F)
+        tue=$(gdate -d '-3 day' +%F)
+        wed=$(gdate -d '-2 day' +%F)
+        thu=$(gdate -d '-1 day' +%F)
+        fri=$(gdate +%F)
         ;;
     esac
 

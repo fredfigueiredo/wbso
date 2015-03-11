@@ -17,6 +17,7 @@ For the moment, it assumes you submit always the same task / time per day.
 ## Requirements
 
 * OS X (10.8 or 10.9)
+* Homebrew and Coreutils
 
 
 ## Install
@@ -24,7 +25,7 @@ For the moment, it assumes you submit always the same task / time per day.
 Open a terminal, copy & paste, and run:
 
 ```sh
-bash <(curl -s https://raw.githubusercontent.com/fredfigueiredo/wbso/master/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/fredfigueiredo/wbso/dev/install.sh)
 ```
 
 
@@ -52,7 +53,7 @@ wbso.sh
 Open a terminal, copy & paste, and run:
 
 ```sh
-bash <(curl -s https://raw.githubusercontent.com/fredfigueiredo/wbso/master/uninstall.sh)
+bash <(curl -s https://raw.githubusercontent.com/fredfigueiredo/wbso/dev/uninstall.sh)
 ```
 
 ## To Be Done

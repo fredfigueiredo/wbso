@@ -3,6 +3,9 @@
 # Load common functions
 source parts/functions.sh
 
+# Install Homebrew, required
+source parts/brew.sh
+
 # Setup WBSO configuration file
 source parts/setup.sh
 
