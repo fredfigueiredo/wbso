@@ -1,0 +1,7 @@
+# DO NOT delete or change the comments in this file
+#
+# Daily template
+# Assumes every day you submit the same task, description, story and duration
+#
+# Edit the next line: Work type, Description, Topic / Story / Free Text, Duration
+training,"Work for X Product","User story in Jira or any other system",6h
