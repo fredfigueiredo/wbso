@@ -25,12 +25,13 @@ For the moment, it assumes you submit always the same task / time per day.
 Open a terminal, copy & paste, and run:
 
 ```sh
-bash <(curl -s https://raw.githubusercontent.com/fredfigueiredo/wbso/dev/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/fredfigueiredo/wbso/master/install.sh)
 ```
 
 
 ## Setup
 
+* Coreutils will be installed via Homebrew to access GNU/Linux bash
 * You will be prompt to setup your WBSO during the first run
 * Provide your WBSO main URL and the URL to the CSV upload page
 * Edit your day template `parts/templates/day.txt`
@@ -53,7 +54,7 @@ wbso.sh
 Open a terminal, copy & paste, and run:
 
 ```sh
-bash <(curl -s https://raw.githubusercontent.com/fredfigueiredo/wbso/dev/uninstall.sh)
+bash <(curl -s https://raw.githubusercontent.com/fredfigueiredo/wbso/master/uninstall.sh)
 ```
 
 ## To Be Done

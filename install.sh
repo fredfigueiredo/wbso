@@ -5,7 +5,7 @@ clear
 
 # Define variables
 scripts_folder="$HOME/.wsbo"
-scripts_file='dev.zip'
+scripts_file='master.zip'
 
 echo 'Preparing your WBSO Report Automator...'
 # Download or update the WBSO Automator scripts
